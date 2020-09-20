@@ -11,3 +11,7 @@ class AboutPageView(TemplateView):
 
 class CvPageView(TemplateView):
     template_name = "cv.html"
+
+
+class ContactPageView(TemplateView):
+    template_name = "contact.html"
