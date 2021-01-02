@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-theme.min.css">
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-    <title>Contact</title>
-</head>
-    <body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-theme.min.css">
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+        <title>Contact</title>
+        <style>
+            .body {
+                background-color: #111;
+                color: #818181;
+            }
+            .side_nav {
+				height: 100%;
+				width: 170px; /* Set the width of the sidebar */
+				position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+				z-index: 1; /* Stay on top */
+				top: 0; /* Stay at the top */
+				left: 0;
+				background-color: #111; /* Black */
+				overflow-x: hidden; /* Disable horizontal scroll */
+				padding-top: 20px;
+            }
+
+            .side_nav a {
+				padding: 6px 8px 6px 16px;
+				text-decoration: none;
+				font-size: 20px;
+				color: #818181;
+				display: block;
+			}
+
+			.side_nav a:hover {
+  				color: #f1f1f1;
+			}
+        </style>
+    </head>
+    <body class="body">
         <!-- Load an icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <!-- The sidebar -->
-        <div class="sidenav">
-          <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
-          <a href="/about/"><i class="fa fa-phone"></i> About</a>
-          <a href="/contact"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
+        <div class="side_nav">
+            <a href="/"><i class="fa fa-fw fa-home"></i> Home </a>
+            <a href="/about/"><i class="fa fa-phone"></i> About </a>
+            <a href="/contact"><i class="fa fa-fw fa-envelope"></i> Contact Me </a>
+			<a href="https://github.com/TheRockerfly/my_cv_site"> <i class="fa fa-github"></i> Site repo</a>
         </div>
+
         <div class="container">
-            <p><span style="font-weight: 400;"></span><a href="mailto:jamesrocker@hotmail.co.uk"><span style="font-weight: 400;">Email</span></a></p>
-            <p><span style="font-weight: 400;">Telephone: Available on request</span></p>
-            <p><span style="font-weight: 400;"></span><a href="https://github.com/TheRockerfly"><span style="font-weight: 400;">Portfolio</span></a></p>
+            <p><a href="mailto:jamesrocker@hotmail.co.uk">Email</a></p>
+            <p>Telephone: Available on request</p>
+            <p><a href="https://github.com/TheRockerfly">Portfolio</a></p>
         </div>
     </body>
 </html>
