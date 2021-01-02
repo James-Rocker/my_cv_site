@@ -4,9 +4,51 @@
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-theme.min.css">
-        <title>Welcome!</title>
+        <title>Home</title>
+        <style>
+            .body_div {
+                margin-left: 200px;
+                padding: 0px 10px;
+                font-weight: 400;
+                background-color: #111; /* Black */
+                color: #818181;
+            }
+
+            .side_nav {
+				height: 100%;
+				width: 170px; /* Set the width of the sidebar */
+				position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+				z-index: 1; /* Stay on top */
+				top: 0; /* Stay at the top */
+				left: 0;
+				background-color: #111; /* Black */
+				overflow-x: hidden; /* Disable horizontal scroll */
+				padding-top: 20px;
+            }
+
+            .side_nav a {
+				padding: 6px 8px 6px 16px;
+				text-decoration: none;
+				font-size: 20px;
+				color: #818181;
+				display: block;
+			}
+
+			.side_nav a:hover {
+  				color: #f1f1f1;
+			}
+        </style>
     </head>
-    <body>
+    <body class="body_div">
+
+        <!-- The sidebar -->
+        <div class="side_nav">
+            <a href="/"><i class="fa fa-fw fa-home"></i> Home </a>
+            <a href="/about/"><i class="fa fa-phone"></i> About </a>
+            <a href="/contact"><i class="fa fa-fw fa-envelope"></i> Contact Me </a>
+			<a href="https://github.com/TheRockerfly/my_cv_site"> <i class="fa fa-github"></i> Site repo</a>
+        </div>
+
         <h1>Hi!</h1>
         <p>My name is James. I am a Data/software Engineer in the UK. I have an interest in all things tech, automation, data and making peoples lives easier.</p>
         <p>The site is mostly static for the time being but it's using the following tools;</p>
@@ -19,8 +61,5 @@
             <li>Heroku for hosting</li>
             <li>Bootstrap for frontend</li>
         </ul>
-        <p><a href="/about/">About Me</a></p>
-        <p><a href="/cv/">My CV</a></p>
-        <p><a href="https://github.com/TheRockerfly/my_cv_site">The website repo</a></p>
     </body>
 </html>
