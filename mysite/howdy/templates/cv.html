@@ -8,23 +8,40 @@
         <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
         <title>James Rocker CV</title>
         <style>
-            div.side_nav {
-                text-align: left;
+            .side_nav {
+				height: 100%;
+				width: 170px; /* Set the width of the sidebar */
+				position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+				z-index: 1; /* Stay on top */
+				top: 0; /* Stay at the top */
+				left: 0;
+				background-color: #111; /* Black */
+				overflow-x: hidden; /* Disable horizontal scroll */
+				padding-top: 20px;
             }
+
+            .side_nav a {
+				padding: 6px 8px 6px 16px;
+				text-decoration: none;
+				font-size: 20px;
+				color: #818181;
+				display: block;
+			}
+
+			.side_nav a:hover {
+  				color: #f1f1f1;
+			}
+
             div.header_div {
-                text-align: center;
-                font-weight: 400;
+				text-align: center;
+				font-weight: 400;
             }
             div.body_div {
-                padding: 35px;
+                margin-left: 170px;
+                padding: 0px 10px;
                 font-weight: 400;
             }
-            li {
-                font-weight: 400;
-            }
-            div.sub_header {
-                font-weight: 400;
-            }
+
         </style>
     </head>
 
@@ -34,9 +51,10 @@
 
         <!-- The sidebar -->
         <div class="side_nav">
-            <a href="/"><i class="fa fa-fw fa-home"></i> Home</a>
-            <a href="/about/"><i class="fa fa-phone"></i> About</a>
-            <a href="/contact"><i class="fa fa-fw fa-envelope"></i> Contact Me</a>
+            <a href="/"><i class="fa fa-fw fa-home"></i> Home </a>
+            <a href="/about/"><i class="fa fa-phone"></i> About </a>
+            <a href="/contact"><i class="fa fa-fw fa-envelope"></i> Contact Me </a>
+			<a href="https://github.com/TheRockerfly/my_cv_site"> <i class="fa fa-github"></i> Site repo</a>
         </div>
 
         <!-- The header of the cv -->
@@ -83,7 +101,6 @@
                     <li>Developed Power BI dashboards for internal use</li>
                 </ul>
             </ul>
-            <p>&nbsp;</p>
 
             <div class="sub_header">
                 <p>
@@ -102,7 +119,6 @@
                     <li>Maintained and developed existing VBA scripts for SQL data warehouse and some Excel dashboards</li>
                 </ul>
             </ul>
-            <p>&nbsp;</p>
 
             <div class="sub_header">
                 <p><strong>Technical Support Analyst &ndash; Collision Management Systems </strong><strong>&nbsp;&nbsp;&nbsp; </strong>(June 2016 to June 2017)</p>
@@ -116,7 +132,6 @@
                 <li>Investigate, refer, escalate and resolve technical API support queries</li>
                 <li>Perform product software testing on corporate web product, liaising with developers</li>
             </ul>
-            <p>&nbsp;</p>
 
             <div class="sub_header">
                 <p><strong>Data Analyst - Lambert Contracts, Glasgow</strong><strong>&nbsp;&nbsp;&nbsp; </strong>(Jan 2016 to June 2016)</p>
@@ -130,7 +145,6 @@
                 <li>Deployment of mobile computing for field staff, including creating installation images using Python</li>
                 <li>Managing set-up of IT infrastructure for a new remote site, coordinating with 3rd party suppliers</li>
             </ul>
-            <p>&nbsp;</p>
 
             <div class="sub_header">
                 <p><strong>Customer Service - Hewlett Packard Financial Services</strong><strong>&nbsp;&nbsp;&nbsp; </strong>(Oct 2014 to Jan 2016)</p>
@@ -140,7 +154,6 @@
                 <li>Financial data analysis, presentation, and planning; using SQL, Excel, and other desktop tools</li>
                 <li>Used Excel VBA scripts, formulas, and pivot tables to automate and improve reporting processes</li>
             </ul>
-            <p>&nbsp;</p>
 
             <div class="sub_header">
                 <p><strong>Stock Controller &ndash; Baxter Healthcare</strong><strong>&nbsp;&nbsp;&nbsp; </strong>(Feb 2014 to Jul 2014)</p>
@@ -150,7 +163,6 @@
                 <li>Improved stock management procedures by creating new reports using VBA and Access, extracting data directly from legacy SQL database via ODBC link</li>
                 <li>Maintained inventory data quality on a WMS and an AS400 inventory system</li>
             </ul>
-            <p>&nbsp;</p>
 
             <div class="sub_header">
                 <p><strong>Business Support Administrator &ndash; Baxter Healthcare</strong><strong>&nbsp;&nbsp;&nbsp; </strong>(Jul 2013 &ndash; Jan 2014)</p>
@@ -160,72 +172,15 @@
                 <li>Automated a networked process to deliver timely and accurate management information</li>
                 <li>Used Excel VBA to develop functions and macros for data analysis and presentation</li>
             </ul>
-            <p>&nbsp;</p>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p><strong>Technical Proficiencies</strong></p>
-                        </td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>SQL</p>
-                        </td>
-                        <td>
-                            <p>5+ years</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>TSQL, SSIS, SSRS</p>
-                        </td>
-                        <td>
-                            <p>4 years></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Python:</p>
-                            <p>Datacamp certified Python programmer and Data Analyst</p>
-                            <p>Extensively used Pandas, SQLAlchemy, Beautiful Soup, Numpy, Matplotlib, Bokeh, Requests, Geopandas, Selenium</p>
-                        </td>
-                        <td>
-                            <p>4 years</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Power BI</p>
-                        </td>
-                        <td>
-                            <p>3 years</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>MS Access, VBA</p>
-                        </td>
-                        <td>
-                            <p>3 years</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>Microsoft Excel</p>
-                        </td>
-                        <td>
-                            <p>8 years</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
 
-            <!--		footer-->
-            <p><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
-            <p><a href="/about/">About Me</a></p>
-            <p><a href="https://github.com/TheRockerfly/my_cv_site">The website repo</a></p>
+			<p><strong>Technical Languages</strong></p>
+				<p>Python, TSQL, SSIS, SSRS, Ruby</p>
+			<p><strong>Library Technologies</strong></p>
+				<p>Pandas, SQLAlchemy, Flask, Django, Beautiful Soup, boto3, Numpy, Matplotlib, Bokeh, Requests, Airflow, Pytest</p>
+			<p><strong>Other tech</strong></p>
+				<p>Looker, Power BI, MS Access, VBA, MS Excel</p>
+			<p><strong>Certifications</strong></p>
+				<p>Datacamp certified Python programmer and Data Analyst</p>
         </div>
     </body>
 </html>
